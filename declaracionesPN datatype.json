@@ -1,0 +1,696 @@
+"declaracion": object 
+{ 
+	"generales": object
+	{
+		"codTipoDeclara": string,
+		"cabecera": object
+		{
+			"refTabla": string,
+			"numEjercicio": string,
+			"numFormulario": string,
+			"numOrden": int,
+			"numRuc": string,
+			"numRevision": int,
+			"fecRevision": timestamp,
+			"numSec": int,
+			"indActual": string,
+			"indEstado": string,
+			"indProceso": string,
+			"fecCreacion": timestamp
+		},
+		"indicadorRenta": object
+		{
+			"refTabla": string,
+			"indCas100": string,
+			"indCas350": string,
+			"indCas107": string,
+			"indCas108": string,
+			"indCas111": string,
+			"indCas130": string,
+			"indCas131": string,
+			"indCas514": string
+		},
+		"solicitudFracciona": object
+		{
+			"fecVencimiento": timestamp,
+			"mtoFraccionamiento": decimal,
+			"codFormaPago": string,
+			"numMesesAplaz": int,
+			"numCuotasFracc": int,
+			"mtoCuotaFracc": decimal,
+			"mtoCuotaAcog": decimal,
+			"numFormulario": string,
+			"numOrdenFormulario": string,
+			"codTributosFracc": string,
+			"mtoDeuda": decimal
+		},
+		"solicitudDevoluc": object
+		{
+			"numEjercicio": string,
+			"codFormaDevoluc": string,
+			"codCCI": string,
+			"codTipoSolic":string,
+			"codTipPagFutuSegun": string,
+			"codTipPagFutuPrim": string,
+			"codTipPagFutuTrab": string
+		}
+	},
+	"seccInformativa": object
+	{
+		"casillaInformativa": object
+		{
+			"refTabla": string,
+			"mtoCas235": decimal,
+			"mtoCas236": decimal,
+			"mtoCas200": decimal,
+			"mtoCas201": decimal,
+			"mtoCas203": decimal,
+			"mtoCas518": decimal,
+			"mtoCas552": decimal,
+			"mtoCas601": decimal,
+			"mtoCas559": decimal,
+			"mtoCas602": decimal,
+			"mtoCas560": decimal,
+			"mtoCas561": decimal,
+			"mtoCas998": decimal,
+			"mtoCas999": decimal,
+			"mtoCas516": decimal,
+			"mtoCas523": decimal,
+			"mtoCas524": decimal,
+			"mtoCas525": decimal
+		},
+		"condominos": object
+		{
+			"refTabla": string,
+			"lisCondomino": array
+			[
+				{
+					"codDocIdeDec": string,
+					"numdocIdeDec": string,
+					"porParticipa": decimal,
+					"desPartidaReg": string,
+					"desDireccion": string,
+					"codUbigeo": string,
+					"mtoValBien": decimal
+				}
+			]
+		},
+		"alquileres": object
+		{
+			"refTabla": string,
+			"lisAlquileres": array
+			[
+				{
+					"numCorrPredio": int,
+					"codDocIdeDec": string,
+					"numDocIdeDec": string,
+					"mtoAlquiler": decimal,
+					"codTipBien": string,
+					"codSubTipBien": string,
+					"desBienAlq": string,
+					"codTipVia": string,
+					"desVia": string,
+					"codTipZona": string,
+					"desZona": string,
+					"numNro": string,
+					"numKilometro": string,
+					"numManzana": string,
+					"numInterior": string,
+					"numDpto": string,
+					"numLote": string,
+					"desReferenc": string,
+					"codUbigeo": string,
+					"numMesesAlq": int
+				}
+			]
+		},
+		"atribucionesGastos": object
+		{
+			"refTabla": string,
+			"lisAtribGastos": array
+			[
+				{
+					"numFormulario": string,,
+					"codTipSoc": string,
+					"codTipVin": string,
+					"codTipDocVin": string,
+					"desTipDocOtr": string,
+					"numDocVin": string,
+					"desNomRazSoc": string,
+					"codTipDoc": string,
+					"numDoc": string,
+					"numRucAtrib": string,
+					"indSexo": string,
+					"fecIniRel": timestamp,
+					"porAtribTit": decimal,
+					"porAtribucion": decimal,
+					"desCorreo": string,
+					"numTelFijo": string,
+					"numCel": string,
+					"indTipoAtrib ": string,
+					"codTipoGasto ": string
+				}
+			]
+		},
+		"exoneradaInafecta": object
+		{
+			"refTabla": string,
+			"lisExonInaf": array
+			[
+				{
+					"codTipRenta": string,
+					"desValLiteral": string,
+					"mtoRtasExon": decimal
+				}
+			]
+		},
+		"dividendPercibidos": object
+		{
+			"refTabla": string,
+			"lisDividPercib": array
+			[
+				{
+					"numRuc": string,
+					"mtoPerci": decimal,
+					"fecPago ": timestamp
+				}
+			]
+		},
+		"fuenteExtranjera": object
+		{
+			"refTabla": string,
+			"lisFuenteEst": array
+			[
+				{
+					"codPais": string,
+					"desPais": string,
+					"codTipRenta": string,
+					"desTipRenta": string,
+					"mtoImpuesto": decimal
+				}
+			]
+		}
+	},
+	"seccDeterminativa": object
+	{
+		"rentaPrimera": object
+		{
+			"resumenPrimera": object
+			{
+				"refTabla": string,
+				"mtoCas100": decimal,
+				"mtoCas557": decimal,
+				"mtoCas558": decimal,
+				"mtoCas102": decimal,
+				"mtoCas501": decimal,
+				"mtoCas502": decimal,
+				"mtoCas515": decimal,
+				"mtoCas153": decimal,
+				"mtoCas367": decimal,
+				"mtoCas368": decimal,
+				"mtoCas369": decimal,
+				"mtoCas370": decimal,
+				"mtoCas156": decimal,
+				"mtoCas133": decimal,
+				"mtoCas159": decimal,
+				"mtoCas161": decimal,
+				"mtoCas162": decimal,
+				"mtoCas163": decimal,
+				"mtoCas164": decimal,
+				"mtoCas166": decimal,
+				"mtoCas160": decimal
+			},
+			"casilla100Cabecera": object
+			{
+				"refTabla": string,
+				"lisCas100Cab": array
+				[
+					{
+						"numId": int,
+						"codTipDoc": string,
+						"numDoc": string,
+						"desPartidaReg": string",
+						"numArrend": string,
+						"codUbigeo2": string,
+						"mtoPagSinInt": decimal,
+						"mtoGravado": decimal,
+						"codTipBien": string,
+						"codBien": string,
+						"desBien": string,
+						"codTipVia": string,
+						"desVia": string,
+						"codTipZona": string,
+						"desZona": string,
+						"numNro": string,
+						"numKilometro": string,
+						"numManzana": string,
+						"numInterior": string,
+						"numDpto": string,
+						"numLote": string,
+						"desReferenc": string,
+						"numSumLuz": string,
+						"numSumAgua": string,
+						"indArchPers": string,
+						"lisCas100Detalles": array
+						[
+							{
+								"refTabla": string,
+								"perPago": string,
+								"numFormulario": string,
+								"numOrdOpe": string,
+								"fecPago": timestamp,
+								"mtoPagSInt": decimal,
+								"mtoGravado": decimal,
+								"indAceptado": string,
+								"indArchPers": string
+							}
+						]
+					}
+				]
+			}
+		},
+		"rentaSegunda": object
+		{
+			"resumenSegunda": object
+			{
+				"refTabla": string,
+				"mtoCas350": decimal,
+				"mtoCas353": decimal,
+				"mtoCas354": decimal,
+				"mtoCas355": decimal,
+				"mtoCas385": decimal,
+				"mtoCas356": decimal,
+				"mtoCas357": decimal,
+				"mtoCas388": decimal,
+				"mtoCas358": decimal,
+				"mtoCas359": decimal,
+				"mtoCas360": decimal,
+				"mtoCas362": decimal,
+				"mtoCas363": decimal,
+				"mtoCas364": decimal,
+				"mtoCas365": decimal,
+				"mtoCas366": decimal,
+				"mtoCas361": decimal
+			},
+			"casilla350": object
+			{
+				"refTabla": string,
+				"lisCas350": array
+				[
+					{
+						"codTipFteRta": string,
+						"codTipDoc": string,
+						"numDoc": string,
+						"desRazSoc": string,
+						"perRta": string,
+						"mtoCostoComp": decimal,
+						"mtoPrecVenta": decimal,
+						"mtoGanancia": decimal,
+						"cntVal": int,
+						"numRucEmi": string,
+						"desRazSocEmi": string
+					}
+				]
+			},
+			"casilla355": object
+			{
+				"refTabla": string,
+				"lisCas355": array
+				[
+					{
+						"codTipFteRta": string,
+						"codTipDoc": string,
+						"numDoc": string,
+						"desRazSoc": string,
+						"perRta": string,
+						"mtoCostoComp": decimal,
+						"mtoPrecVenta": decimal,
+						"mtoPerdida": decimal,
+						"cntVal": int,
+						"numRucEmi": string,
+						"desRazSocEmi": string
+					}
+				]
+			},
+			"casilla385": object
+			{
+				"refTabla": string,
+				"lisCas385": array
+				[
+					{
+						"codPais": string,
+						"desPais": string,
+						"codTipRenta": string,
+						"desTipRenta": string
+						"mtoImpuesto": decimal
+					}
+				]
+			}
+		},
+		"rentaTrabajo": object
+		{
+			"resumenTrabajo": object
+			{
+				"refTabla": string,
+				"mtoCas107": decimal,
+				"mtoCas507": decimal,
+				"mtoCas508": decimal,
+				"mtoCas108": decimal,
+				"mtoCas509": decimal,
+				"mtoCas111": decimal,
+				"mtoCas510": decimal,
+				"mtoCas511": decimal,
+				"mtoCas514": decimal,
+				"mtoCas512": decimal,
+				"mtoCas522": decimal,
+				"mtoCas519": decimal,
+				"mtoCas513": decimal,
+				"mtoCas116": decimal,
+				"mtoCas517": decimal,
+				"mtoCas120": decimal,
+				"mtoCas122": decimal,
+				"mtoCas158": decimal,
+				"mtoCas167": decimal,
+				"mtoCas563": decimal,
+				"mtoCas564": decimal,
+				"mtoCas565": decimal,
+				"mtoCas125": decimal,
+				"mtoCas127": decimal,
+				"mtoCas128": decimal,
+				"mtoCas130": decimal,
+				"mtoCas131": decimal,
+				"mtoCas141": decimal,
+				"mtoCas142": decimal,
+				"mtoCas144": decimal,
+				"mtoCas145": decimal,
+				"mtoCas146": decimal,
+				"mtoCas168": decimal,
+				"mtoCas140": decimal
+			},
+			"casilla107": object
+			{
+				"refTabla": string,
+				"lisCas107": array
+				[
+					{
+						"tipDoc": string,
+						"numDoc": string,
+						"desRazSoc": string,
+						"perServicio": string,
+						"codTipComp": string,
+						"numSerie": string,
+						"numComp": string
+						"fecEmi": timestamp,
+						"mtoAtribuido": decimal
+					}
+				]
+			},
+			"casilla108": object
+			{
+				"refTabla": string,
+				"lisCas108": array
+				[
+					{
+						"tipDoc": string,
+						"numDoc": string,
+						"desRazSoc": string,
+						"perServicio": string,
+						"mtoAtribuido": decimal
+					}
+				]
+			},
+			"casilla111": object
+			{
+				"refTabla": string,
+				"lisCas111": array
+				[
+					{
+						"codTipDoc": string,
+						"numDoc": string,
+						"desRazSoc": string,
+						"perServicio": string,
+						"mtoPercibido": decimal
+					}
+				]
+			},
+			"casilla514Cabecera": object
+			{
+				"refTabla": string,
+				"lisCas514Cabecera": array
+				[
+					{
+						"indTipoGasto": string,
+						"mtoGasto": decimal,
+						"casilla514Detalle": object
+						{
+							"refTabla": string
+							"lisCas514": array
+							[
+								{
+									"numEjercicio": string,
+									"numFormulario": string,
+									"numRuc": string,
+									"indTipGasto": string,
+									"codDocEmisor": string,
+									"numDocEmisor": string,
+									"desNomEmisor": string,
+									"codTipComprob": string,
+									"numSerie": string,
+									"numComprob": string,
+									"fecComprob": timestamp,
+									"mtoComprob": decimal,
+									"mtoDeduccion": decimal,
+									"numPrestamo": string,
+									"fecFesembolso": timestamp,
+									"numPartidaReg": string,
+									"mtoInteres": decimal,
+									"fecPago": timestamp,
+									"codMedPago": string,
+									"codFor": string,
+									"numFormulario": string,
+									"indEstArchPers": string,
+									"indEstFormVirt": string,
+									"indArchPers": string,
+									"mtoOriginal": decimal,
+									"codForPago": string,
+									"porDeduccion": decimal,
+									"porAtribucion": decimal,
+									"mtoAtribuir": decimal,
+									"codTipVinc": string,
+									"numRucTit": string,
+									"desNomTit": string,
+									"codTipBien": string,
+									"indTipoAtrib": string
+								}
+							]
+						}
+					}
+				]
+			},
+			"replicaCasilla514": object
+			{
+				"refTabla": string,
+				"lisCas514": array
+				[
+					{
+						"numEjercicio": string,
+						"numFormulario": string,
+						"numRucTitular": string,
+						"numRucAtrib": string,
+						"indTipGasto": string,
+						"codDocEmisor": string,
+						"numDocEmisor": string,
+						"desNomEmisor": string,
+						"codTipComprob": string,
+						"numSerie": string,
+						"numComprob": string,
+						"fecComprob": timestamp,
+						"mtoComprob": decimal,
+						"mtoDeduccion": decimal,
+						"numPrestamo": string,
+						"fecFesembolso": timestamp,
+						"numPartidaReg": string,
+						"mtoInteres": decimal,
+						"fecPago": timestamp,
+						"codMedPago": string,
+						"indEstArchPers": string,
+						"indEstFormVirt": string,
+						"indArchPers": string,
+						"mtoOriginal": decimal,
+						"codForPago": string,
+						"porDeduccion": decimal,
+						"porAtribucion": decimal,
+						"mtoAtribuir": decimal,
+						"codTipVinc": string,
+						"desNomTit": string,
+						"codTipBien": string
+					}
+				]
+			},
+			"casilla522": object
+			{
+				"refTabla": string,
+				"lisCas522": array
+				[
+					{
+						"codTipDoc": string,
+						"numDoc": string,
+						"desRazSoc": string,
+						"mtoRetenido": decimal
+					}
+				]
+			},
+			"casilla519": object
+			{
+				"refTabla": string,
+				"lisCas519": array
+				[
+					{
+						"codTipDona": string,
+						"desTipDona": string,
+						"codModDona": string,
+						"desModDona": string,
+						"codTipDoc": string,
+						"numDoc": string,
+						"desRazSoc": string,
+						"fecDonacion": timestamp,
+						"mtoDonacion": decimal
+					}
+				]
+			},
+			"casilla116": object
+			{
+				"refTabla": string,
+				"lisCas116": array
+				[
+					{
+						"codPais": string,
+						"desPais": string,
+						"codTipRenta": string,
+						"desTipRenta": string,
+						"codTipRentaRtfi": string,
+						"codBenef": string,
+						"codCdi": string,
+						"desPagador": string,
+						"codTipDocPagador": string,
+						"numDocPagador": string,
+						"mtoImpuesto": decimal
+					}
+				]
+			}
+		}
+	},
+	"determinacionDeuda": object
+	{
+		"rentaSegunda": object
+		{
+			"pagoDirectoIR": object
+			{
+				"refTabla": string,
+				"lisCas358": array
+				[
+					{
+						"perPago": string,
+						"numFormulario": string,
+						"numOrdOpe": string,
+						"fecPago": timestamp,
+						"mtoPagSInt": decimal
+					}
+				]
+			},
+			"impRetenidoRentas": object
+			{
+				"refTabla": string,
+				"lisCas359": array
+				[
+					{
+						"codTipDoc": string,
+						"numDoc": string,
+						"desRazSoc": string,
+						"perImpReten": string,
+						"mtoRetenido": decimal
+					}
+				]
+			}
+		},
+		"rentaTrabajo": object
+		{
+			"credIRFuenteExtran": object
+			{
+				"refTabla": string,
+				"lisCas122": array
+				[
+					{
+						"codPais": string,
+						"desPais": string,
+						"codTipRenta": string,
+						"desTipRenta": string,
+						"mtoImpuesto": decimal
+					}
+				]
+			},
+			"pagoDirectoIR": object
+			{
+				"refTabla": string,
+				"lisCas127": array
+				[
+					{
+						"perPago": string,
+						"numFormulario": string,
+						"numOrdOpe": string,
+						"fecPago": timestamp,
+						"mtoSalfav": decimal,
+						"mtoSalfavExp": decimal,
+						"mtoOtrCre": decimal,
+						"mtoPagsInt": decimal
+					}
+				]
+			},
+			"pagoDirectIRQuinta": object
+			{
+				"refTabla": string,
+				"lisCas128": array
+				[
+					{
+						"perPago": string,
+						"numFormulario": string,
+						"numOrdOpe": string,
+						"fecPago": timestamp,
+						"mtoPagSInt": decimal
+					}
+				]
+			},
+			"impRetenidoRentas": object
+			{
+				"refTabla": string,
+				"lisCas130": array
+				[
+					{
+						"codTipDoc": string,
+						"numDoc": string,
+						"desRazSoc": string,
+						"perImpReten": string,
+						"mtoRetenido": decimal
+					}
+				]
+			},
+			"impRetenRentasQnta": object
+			{
+				"refTabla": string,
+				"lisCas131": array
+				[
+					{
+						"codTipDoc": string,
+						"numDoc": string,
+						"desRazSoc": string,
+						"perImpReten": string,
+						"mtoRetenido": decimal,
+						"mtoDevolQuinta": decimal,
+						"numFormulQuinta": string,
+						"numOrdenQuinta": int
+					}
+				]
+			}
+		}
+	}
+}

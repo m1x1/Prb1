@@ -1,0 +1,768 @@
+"declaracion": object 
+{
+   "generales": object {
+      "codTipoDeclara": string,
+      "cabecera": object {
+         "refTabla": string,
+         "numNotaAbono": string,
+         "codFormulario": string,
+         "numOrden": int,
+         "desResumen":string,
+         "numCaratula":string,
+         "codResumen":string,
+         "numFolio":int,
+         "numLlttRuc":string,
+         "indIndica":string,
+         "perPeriodo":string,
+         "fecPresenta":timestamp
+         "indAutOrden":string,
+         "numCheque":string,
+         "codBcoLibrad":string,
+         "indRechazado":"string,
+         "indRectifica":string,
+         "numSemana":string,
+         "indSinTotal":string,
+         "desCNumero":string,
+         "indECaptura":string,
+         "codDigit1":string,
+         "codDigit2":string,
+         "codDigit3":string,
+         "codDigit4":string,
+         "codDigit5":string,
+         "codDigit6":string,
+         "codEstado":string,
+         "codTipDocIdeDec":string,
+         "numDocIdeDec":string,
+         "perDeclara":string,
+		 "numCtl":string,
+		 "detalle" : object {
+		    "refTabla":string,
+			"lisDetalles":array [
+               {
+                  "numCasilla":string,
+                  "desValCasilla":string,
+                  "indCaptura":string,
+                  "codCasilla":string,
+                  "codEstado":string
+               }
+            ]
+		 }
+         
+      },
+      "solicitudFracciona": object
+	  {
+	  	"fecVencimiento": timestamp,
+	  	"mtoFraccionamiento": decimal,
+	  	"codFormaPago": string,
+	  	"numMesesAplaz": int,
+	  	"numCuotasFracc": int,
+	  	"mtoCuotaFracc": decimal,
+	  	"mtoCuotaAcog": decimal,
+	  	"numFormulario": string,
+	  	"numOrdenFormulario": string,
+	  	"codTributosFracc": string,
+	  	"mtoDeuda": decimal
+	  },
+	  "solicitudDevoluc": object
+	  {
+	  	"numEjercicio": string,
+	  	"codFormaDevoluc": string,
+	  	"codCCI": string,
+	  	"codTipoSolic":string,
+	  	"codTipPagFutuSegun": string,
+	  	"codTipPagFutuPrim": string,
+	  	"codTipPagFutuTrab": string
+	  }
+   },
+   "seccInformativa": object {
+      "alquileres": object {
+         "refTabla":string,
+         "lisAlquileres":array [
+            {
+               
+               "numCorPred":int,
+               "codTipDocAlq":string,
+               "numDocAlq":string,
+               "mtoAlq":decimal,
+               "codTipbien":string,
+               "indBien":string,
+               "desIdentif":string,
+               "codUbigeo":string,
+               "codTipVia":string,
+               "desVia":string,
+               "codTipZona":string,
+               "desZona":string,
+               "numNro":string,
+               "numKilometro":string,
+               "numManzana":string,
+               "numInterior":string,
+               "numDpto":string,
+               "numLote":string,
+               "desReferenc":string,
+               "numMesAlq":int
+            }
+         ]
+      },
+      "desmedros": object {
+         "refTabla":string,
+         "lisDesmedros":array [
+            {
+               
+               "numCorrDesmed":int,
+               "indDestruccion":string,
+               "codTipDocumento":string,
+               "numDocumento":string,
+               "nomApeNombres":string,
+               "desIdJuzgPaz":string,
+               "fecComSunat":timestamp
+               "fecDestruccion":timestamp
+               "mtoDesmedro":decimal
+            }
+         ]
+      },
+      "mermas": object {
+         "refTabla":string,
+         "lisMermas":array [
+            {
+               
+               "indInfTecnico":string,
+               "numInfTecnico":"string,
+               "fecInfTecnico":timestamp
+               "codTipDocumento":string,
+               "numDocumento":string,
+               "nomRazonSocial":string,
+               "numColegiatura":string,
+               "mtoMerma":decimal
+            }
+         ]
+      },
+      "regaliasBenefDomic": object {
+         "refTabla":string,
+         "lisRegBenefDomic":array [
+            {
+               
+               "codTipDocumento":string,
+               "numDocumento":string,
+               "nomApeNombres":string,
+               "fecContrato":timestamp
+               "mtoRegalia":decimal
+            }
+         ]
+      },
+      "prinSocios": object {
+         "refTabla":string,
+         "lisPrinSocios":array [
+            {
+               
+               "codTipoSocio":string,
+               "codTipoDocSocio":string,
+               "numDocSocio":string,
+               "nomRazonSocial":string,
+               "fecNacSocio":timestamp
+               "codPais":string,
+               "porPorcentaje":decimal,
+               "fecConstSocio":timestamp
+            }
+         ]
+      },
+      "desusos": object {
+         "refTabla":string,
+         "lisDesusos":array [
+            {
+               
+               "codActivo":string,
+               "numInfTecnico":string,
+               "fecInfTecnico":timestamp
+               "codTipDocumento":string,
+               "numDocumento":string,
+               "nomRazonSocial":string,
+               "numColegiatura":string,
+               "fecDesuso":timestamp
+               "mtoBien":decimal
+            }
+         ]
+      },
+      "opeFinancieras": object {
+         "refTabla":string,
+         "lisOpeFinancieras":array [
+            {
+               
+               "indTipoOper":string,
+               "numCorrelCont":int,
+               "indPlazo":string,
+               "codTipDocumento":string,
+               "numDocumento":string,
+               "nomRazonSocial":string
+               "fecIniContrato":timestamp
+               "fecFinContrato":timestamp
+            }
+         ]
+      },
+      "empReorganizadas": object {
+         "refTabla":string,
+         "lisEmpReorganizadas":array [
+            {
+               
+               "codCasilla":string,
+               "numRuc":string,
+               "nomRazonSocial":string,
+               "nomApellidoPat":string,
+               "nomApellidoMat":string,
+               "nomNombres":"string,
+               "mtoMonto":decimal
+            }
+         ]
+      },
+      "gasRepresentacion": object {
+         "refTabla":string,
+         "lisGasRepresentacion":array [
+            {
+               
+               "semSemana":string,
+               "codDocIdeProvee":string,
+               "numDocIdeProvee":string,
+               "desRazonProvee":string,
+               "mtoAnual":decimal
+            }
+         ]
+      },
+      "contratosColabEsp": object {
+         "refTabla":string,
+         "lisContratosColabEsp":array [
+            {
+               
+               "semSemana":string,
+               "codContrato":string,
+               "desContrato":string
+            }
+         ]
+      },
+      "detContColabEsp": object {
+         "refTabla":string,
+         "lisDetContColabEsp":array [
+            {
+               "codTipDoc":string,
+               "numDoc":string,
+               "codTipMiembro":string,
+               "desrazon":string,
+               "porParticip":decimal
+            }
+         ]
+      },
+      "noDomiciliados": object {
+         "refTabla":string,
+         "lisNoDomiciliados":array [
+            {
+               
+               "semSemana":string,
+               "codTipDocND":string,
+               "numDocND":string,
+               "codTipRta":string,
+               "codPais":string,
+               "codUbigeo":string,
+               "codTipVia":string,
+               "desVia":string,
+               "codTipZona":string,
+               "desZona":string,
+               "numNro":string,
+               "numKilometro":string,
+               "numManzana":string,
+               "numInterior":string,
+               "numDpto":string,
+               "numLote":string,
+               "desReferenc":string,
+               "mtoTasaImp":decimal,
+               "mtoNoRetenc":decimal
+            }
+         ]
+      },
+      "otrosGastos": object {
+         "refTabla":string,
+         "lisOtrosGastos":array [
+            {
+               
+               "numAnexo":int,
+               "desConcLote":string,
+               "mtoVentas":decimal,
+               "mtoGasDir":decimal,
+               "mtoGasInd":decimal,
+               "mtoTotal":decimal
+            }
+         ]
+      },
+      "rentaInternac": object {
+         "refTabla":string,
+         "lisRentaInternac":array [
+            {
+               
+               "semSemana":string,
+               "numCorRta":int,
+               "codTipRta":string,
+               "desTipRta":string,
+               "codPais":string,
+               "desPais":string,
+               "indConvenio":string,
+               "mtoRta":decimal
+            }
+         ]
+      },
+      "infoDonaciones": object {
+         "refTabla":string,
+         "lisInfoDonaciones":array [
+            {
+               
+               "codTipDonac":string,
+               "codTipModal":string,
+               "codTipDoc":string,
+               "numDoc":string,
+               "desNomRazon":string,
+               "fecDonacion":timestamp
+               "mtoDonacion":decimal,
+               "desDonacion":string
+            }
+         ]
+      },
+      "vehiculos": object {
+         "refTabla":string,
+         "lisVehiculos":array [
+            {
+               
+               "semSemana":string,
+               "codCateg":string,
+               "desPlaca":string,
+               "fecIng":timestamp
+               "mtoAdq":decimal,
+               "codCond":string,
+               "codAct":string,
+               "mtoAlq":decimal,
+               "mtoDep":decimal,
+               "mtoCom":decimal,
+               "mtoOtros":decimal,
+               "mtoGasto":decimal,
+               "indDedGasto":string,
+               "indSustitucion":string,
+               "codMotivo":string,
+               "codCategSus":string,
+               "desPlacaSus":string,
+               "fecIngSus":timestamp
+               "mtoAdqSus":decimal,
+               "codCondSus":string,
+               "codActSus":string,
+               "mtoAlqSus":decimal,
+               "mtoDepSus":decimal,
+               "mtoComSus":decimal,
+               "mtoOtrosSus":decimal,
+               "mtoGastoSus":decimal
+            }
+         ]
+      },
+      "gastosInvestig": object {
+         "refTabla":string,
+         "lisGastosInvestig":array [
+            {
+               
+               "numCorProy":int,
+               "indBeneficio":string,
+               "codTipProy":string,
+               "indVinculo":string,
+               "indParte":string,
+               "numRuc":string,
+               "desRazon":string,
+               "numConcytec":string,
+               "desCentro":string,
+               "desProy":string,
+               "fecCalif":timestamp
+               "fecAutoriz":timestamp
+               "mtoTotal":decimal,
+               "mtoDeduc":decimal,
+               "mtoNoDeduc":decimal,
+               "mtoPorBeneficio":decimal,
+               "mtoBeneficio":decimal
+            }
+         ]
+      },
+      "perdExtraord": object {
+         "refTabla":string,
+         "lisPerdExtraord":array [
+            {
+               
+               "numCorrPerd":int,
+               "fecPerdExtra":timestamp
+               "indPerdCub":string,
+               "indHechDelic":string,
+               "fecResJudic":timestamp
+               "indIdentJuz":string,
+               "indHechInut":string,
+               "mtoCasoFort":decimal,
+               "mtoDelComet":decimal
+            }
+         ]
+      }
+   },
+   "seccDeterminativa": object {
+      "impuestoRta": object {
+	     "acta" : object {
+		     "refTabla": string,
+		     "lisActas" : array [{
+		          
+				  "perPago":string,
+				  "fecPago":timestamp
+				  "mtoSalUti":decimal,
+				  "mtoCompen":decimal,
+				  "mtoOtrCred":decimal,
+				  "mtoPagoR":decimal,
+				  "mtoPagoIean":decimal,
+				  "mtoPagoIeanR":decimal,
+				  "codTipoAsist":string,
+				  "porFactor":decimal
+		     }]
+		 },
+         "detAdiciones": object {
+            "refTabla":string,
+            "lisDetAdiciones":array [
+               {
+                  
+                  "semSemana":string,
+                  "codCasillaAnexo":string,
+                  "codCasilla":string,
+                  "codTipAdicion":string,
+                  "numMesAdicion":string,
+                  "mtoBaseMes":decimal
+               }
+            ]
+         },
+         "detAdicDeduc": object {
+            "refTabla":string,
+            "lisDetAdicDeduc":array [
+               {
+                  
+                  "numAnexo":string,
+                  "codCasilla":string,
+                  "codTipo":string,
+                  "mtoBaseCont":decimal,
+                  "mtoBaseTrib":decimal,
+                  "mtoBaseDeduc":decimal
+               }
+            ]
+         },
+         "detVar": object {
+            "refTabla":string",
+            "lisDetVar":array [
+               {
+                  
+                  "codCasilla":string,
+                  "numRuc":string,
+                  "desRazonSocial":string,
+                  "mtoMonto":decimal
+               }
+            ]
+         },
+         "creditos": object {
+            "refTabla":string,
+            "lisCreditos":array [
+               {
+                  
+                  "codCasilla":string,
+                  "numCorNorma":int,
+                  "codTipNorma":string,
+                  "numNorma":string,
+                  "codTipAdicded":string,
+                  "mtoBaseCont":decimal,
+                  "mtoBaseTrib":decimal,
+                  "desCredito":string,
+                  "mtoCredito":decimal
+               }
+            ]
+         }
+      },
+      "credImpuestoRta": object {
+         "rtaFteExt": object {
+            "refTabla":string,
+            "lisRtaFteExt":array [
+               {
+                  
+                  "codCasilla":string,
+                  "codTipDocEx":string,
+                  "numDocEx":string,
+                  "codPais":string,
+                  "mtoImpuesto":decimal,
+                  "mtoAlicuota":decimal
+               }
+            ]
+         }
+      },
+      "estFinancieros": object {
+         "hidrocarburos": object {
+            "refTabla":string,
+            "lisHidrocarburos":array [
+               {
+                  
+                  "numAnexo":string,
+                  "numLote":string,
+                  "desActivRel":string,
+                  "fecFirmaConv":timestamp
+                  "fecVigenciaConv":timestamp
+                  "numPlazoDuracion":string,
+                  "mtoTotActivo":decimal,
+                  "mtoTotPasivo":decimal,
+                  "mtoTotPatrim":decimal,
+                  "mtoVtasNetas":decimal,
+                  "mtoCostVntas":decimal,
+                  "mtoOtrosIngr":decimal,
+                  "mtoReiPositi":decimal,
+                  "mtoReiNegati":decimal,
+                  "mtoOtrosGast":decimal,
+                  "mtoDisLeRta":decimal,
+                  "mtoResUtilid":decimal,
+                  "mtoResPerdid":decimal,
+                  "mtoPerOtCnt":decimal,
+                  "mtoAdiciones":decimal,
+                  "mtoDeduccione":decimal,
+                  "mtoTotRenta":decimal,
+                  "mtoTotPerdida":decimal,
+                  "mtoPerEjerA":decimal,
+                  "mtoInvAmazon":decimal,
+                  "mtoRtaNetaIm":decimal,
+                  "mtoTasaImp":decimal,
+                  "mtoImpMinRta":decimal,
+                  "mtoImpRenta":decimal,
+                  "indSistema":string
+               }
+            ]
+         },
+         "estFinMineria": object {
+            "refTabla":string,
+            "lisEstFinMineria":array [
+               {
+                  
+                  "numAnexo":int,
+                  "numConcesion":string,
+                  "desActivRel":string,
+                  "fecFirmaConv":timestamp
+                  "fecVigenciaConv":timestamp
+                  "numPlazoDuracion":string,
+                  "mtoTotActivo":decimal,
+                  "mtoTotPasivo":decimal,
+                  "mtoTotPatrim":decimal,
+                  "mtoVtasNetas":decimal,
+                  "mtoCostVntas":decimal,
+                  "mtoOtrosIngr":decimal,
+                  "mtoReiPositi":decimal,
+                  "mtoReiNegati":decimal,
+                  "mtoOtrosGast":decimal,
+                  "mtoDisLeRta":decimal,
+                  "mtoResUtilid":decimal,
+                  "mtoResPerdid":decimal,
+                  "mtoPerdidCon":decimal,
+                  "mtoAdiciones":decimal,
+                  "mtoDeduccione":decimal,
+                  "mtoTotRenta":decimal,
+                  "mtoTotPerdida":decimal,
+                  "mtoPerEjerA":decimal,
+                  "mtoInvAmazon":decimal,
+                  "mtoRtaNetaIm":decimal,
+                  "mtoTasaImp":decimal,
+                  "mtoImpMinRta":decimal,
+                  "mtoImpRenta":decimal,
+                  "indSistema":string
+               }
+            ]
+         },
+         "casEstFinanc": object {
+            "refTabla":string,
+            "lisCasEstFinanc":array [
+               {
+                  
+                  "semSemana":string,
+                  "codCasilla":string,
+                  "codTipDocideClpr":string,
+                  "numDocideClpr":string
+                  "codTipDes":string,
+                  "desApellidoP":string,
+                  "desApellidoM":string,
+                  "desNombres":string,
+                  "desRazon":string,
+                  "mtoSaldo":decimal
+               }
+            ]
+         },
+         "adicionesMH": object {
+            "refTabla":string,
+            "lisAdicionesMH":array [
+               {
+                  
+                  "numAnexo":int,
+                  "numConcesion":string,
+                  "mtoAdicion1":decimal,
+                  "mtoAdicion2":decimal,
+                  "mtoAdicion3":decimal,
+                  "mtoAdicion4":decimal,
+                  "mtoAdicion5":decimal,
+                  "mtoAdicion6":decimal,
+                  "mtoAdicion7":decimal,
+                  "mtoAdicion8":decimal,
+                  "mtoAdicion9":decimal,
+                  "mtoAdicion10":decimal,
+                  "mtoAdicion11":decimal,
+                  "mtoAdicion12":decimal,
+                  "mtoAdicion13":decimal,
+                  "mtoAdicion14":decimal,
+                  "mtoAdicion15":decimal,
+                  "mtoAdicion16":decimal,
+                  "mtoAdicion17":decimal,
+                  "mtoAdicion18":decimal,
+                  "mtoAdicion19":decimal,
+                  "mtoAdicion20":decimal,
+                  "mtoAdicion21":decimal,
+                  "mtoAdicion22":decimal,
+                  "mtoAdicion23":decimal,
+                  "mtoAdicion24":decimal,
+                  "mtoAdicion25":decimal,
+                  "mtoAdicion26":decimal,
+                  "mtoAdicion27":decimal,
+                  "mtoAdicion28":decimal,
+                  "mtoAdicion29":decimal,
+                  "mtoAdicion30":decimal,
+                  "mtoAdicion31":decimal,
+                  "mtoAdicion32":decimal,
+                  "mtoAdicion33":decimal,
+                  "mtoAdicion34":decimal,
+                  "mtoAdicion35":decimal,
+                  "mtoAdicion36":decimal,
+                  "mtoAdicion37":decimal,
+                  "mtoAdicion38":decimal,
+                  "mtoAdicion39":decimal,
+                  "mtoAdicion40":decimal,
+                  "mtoAdicion41":decimal,
+                  "mtoAdicion42":decimal,
+                  "mtoAdicion43":decimal,
+                  "mtoAdicion44":decimal,
+                  "mtoAdicionTot":decimal
+               }
+            ]
+         },
+         "deduccionesMH": object {
+            "refTabla":string,
+            "lisDeduccionesMH":array [
+               {
+                  
+                  "numAnexo":int,
+                  "numConcesion":string,
+                  "mtoDeduc1":decimal,
+                  "mtoDeduc2":decimal,
+                  "mtoDeduc3":decimal,
+                  "mtoDeduc4":decimal,
+                  "mtoDeduc5":decimal,
+                  "mtoDeduc6":decimal,
+                  "mtoDeduc7":decimal,
+                  "mtoDeduc8":decimal,
+                  "mtoDeduc9":decimal,
+                  "mtoDeduc10":decimal,
+                  "mtoDeducTot":decimal
+               }
+            ]
+         },
+         "movInmMaqEqu": object {
+            "refTabla":string,
+            "lisMovInmMaqEqu":array [
+               {
+                  
+                  "semSemana":"string,
+                  "codCasilla":string,
+                  "codActivo":string,
+                  "mtoSaldoIni":decimal,
+                  "mtoACompmej":decimal,
+                  "mtoAAportes":decimal,
+                  "mtoACosto":decimal,
+                  "mtoAMayorval":decimal,
+                  "mtoARevvol":decimal,
+                  "mtoAOtras":decimal,
+                  "mtoRVentas":decimal,
+                  "mtoROtros":decimal,
+                  "mtoSaldofin":decimal
+               }
+            ]
+         },
+         "deprecInmMaqEqu": object {
+            "refTabla":string,
+            "lisDeprecInmMaqEqu":array [
+               {
+                  
+                  "semSemana":string,
+                  "codCasilla":string,
+                  "codActivo":string,
+                  "mtoSaldoIni":decimal,
+                  "porDepre":decimal,
+                  "mtoCDSaldoIni":decimal,
+                  "mtoCDACompmej":decimal,
+                  "mtoCDACosto":decimal,
+                  "mtoCDAMayorval":decimal,
+                  "mtoCDARevvol":decimal,
+                  "mtoCDAOtras":decimal,
+                  "mtoCDATotale":decimal,
+                  "mtoRVentas":decimal,
+                  "mtoSaldofin":decimal
+               }
+            ]
+         },
+         "distLegalMH": object {
+            "refTabla":string,
+            "lisDistLegalMH":array [
+               {
+                  
+                  "numAnexo":int,
+                  "numConcLote":string,
+                  "mtoTra":decimal,
+                  "mtoCom":decimal,
+                  "mtoPat":decimal,
+                  "mtoInv":decimal,
+                  "mtoDis":decimal,
+                  "mtoTot":decimal
+               }
+            ]
+         },
+         "otrasAdicDedMH": object {
+            "refTabla":string,
+            "lisOtrasAdicDedMH":array [
+               {
+                  
+                  "numAnexo":int,
+                  "numConcLote":string,
+                  "codTipAdicded":string,
+                  "codTipNorma":string,
+                  "numNorma":"string,
+                  "mtoCredito":decimal
+               }
+            ]
+         }
+      },
+      "balanceComprob": object {
+         "balanceComprob": object {
+            "refTabla":string,
+            "numCaratula":string,
+            "codTipDocIdeDec":string,
+            "numDocIdeDec":string,
+            "perDeclara":string,
+            "codCuenta":"string,
+            "mtoSaldosIniD":decimal,
+            "mtoSaldosIniH":decimal,
+            "mtoMovEjerciD":decimal,
+            "mtoMovEjerciH":decimal,
+            "mtoSumaMayorD":decimal,
+            "mtoSumaMayorH":decimal,
+            "mtoSaldoDeudor":decimal,
+            "mtoSaldoAcreed":decimal,
+            "mtoTranCanceD":decimal,
+            "mtoTranCanceH":decimal,
+            "mtoCuentaBalA":decimal,
+            "mtoCuentaBalP":decimal,
+            "mtoResultNatP":decimal,
+            "mtoResultNatG":decimal,
+            "mtoImpliNiifD":decimal,
+            "mtoImpliNiifH":decimal,
+            "indTipoCta":string,
+            "numCtl":string
+         }
+      }
+   }
+}
